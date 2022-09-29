@@ -4,7 +4,7 @@ export const ContextTab = ({ tabContent }) => {
   const { title, content, author, created_at } = tabContent;
 
   return (
-    <div className="bg-white border border-b-1 border-gray rounded p-3">
+    <div className="bg-white border border-b-1 border-gray rounded p-3 m-3">
       <div className="flex align-items-center">
         <div className="text-sm uppercase bg-primary rounded-sm p-1 text-light-blue">
           New
