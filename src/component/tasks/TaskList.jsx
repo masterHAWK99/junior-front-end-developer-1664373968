@@ -3,8 +3,12 @@ import { TaskItem } from "./TaskItem";
 import completedIcon from "../../assets/completed.svg";
 import activeIcon from "../../assets/active.svg";
 import blockedIcon from "../../assets/blocked.svg";
+import { useContext } from "react";
+import { TaskContext } from "../../context/TaskContext";
 
 export const TaskList = () => {
+  const { setCurrentTask } = useContext(TaskContext);
+
   const getIconByStatus = (status) => {
     if (status === "completed") {
       return completedIcon;
@@ -20,7 +24,12 @@ export const TaskList = () => {
   const mapTasks = () => {
     return tasksData.map((task) => {
       return (
-        <TaskItem title={task.title} icon={getIconByStatus(task.status)} />
+        <TaskItem
+          key={task.id}
+          onClick={() => setCurrentTask(task.id)}
+          title={task.title}
+          icon={getIconByStatus(task.status)}
+        />
       );
     });
   };
