@@ -5,7 +5,7 @@ import { TaskContext } from "../../context/TaskContext";
 import { useContext, useEffect, useState } from "react";
 
 export const BusinessContext = () => {
-  const [contextId, setContextId] = useState(1);
+  const [contextId, setContextId] = useState(0);
   const [readContexts, setReadContexts] = useState([]);
   const [taskId, setTaskId] = useState(1);
   const taskContext = useContext(TaskContext);
@@ -18,6 +18,7 @@ export const BusinessContext = () => {
   useEffect(() => {
     setTaskId(taskContext.currentTask);
   }, [taskContext]);
+
   const handleMarkAsRead = (id) => {
     if (!readContexts.includes(id)) {
       setReadContexts([...readContexts, id]);
