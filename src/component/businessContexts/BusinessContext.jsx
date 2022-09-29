@@ -5,26 +5,48 @@ import { TaskContext } from "../../context/TaskContext";
 import { useContext, useEffect, useState } from "react";
 
 export const BusinessContext = () => {
+  const [contextId, setContextId] = useState(1);
+  const [readContexts, setReadContexts] = useState([]);
   const [taskId, setTaskId] = useState(1);
   const taskContext = useContext(TaskContext);
+
+  const task = tasksData.find((taskData) => taskData.id === taskId);
+  const businessContext = task.businessContexts.find(
+    ({ id }) => id === contextId && readContexts.includes(id)
+  );
 
   useEffect(() => {
     setTaskId(taskContext.currentTask);
   }, [taskContext]);
-
-  const task = tasksData.find((taskData) => taskData.id === taskId);
+  const handleMarkAsRead = (id) => {
+    if (!readContexts.includes(id)) {
+      setReadContexts([...readContexts, id]);
+    }
+  };
 
   const mapTabs = () => {
     return task.businessContexts.map((tab) => {
-      return <ContextTab tabContent={tab} />;
+      return (
+        <ContextTab
+          onClick={() => {
+            setContextId(tab.id);
+            handleMarkAsRead(tab.id);
+          }}
+          tabContent={tab}
+          active={contextId === tab.id}
+          read={readContexts.includes(tab.id)}
+        />
+      );
     });
   };
   return (
     <>
       <div className="bg-gray w-25">{mapTabs()}</div>
-      <div className="w-75">
-        <ContextContent tabContent={tasksData[0].businessContexts[0]} />
-      </div>
+      {businessContext && (
+        <div className="w-75">
+          <ContextContent tabContent={businessContext} />
+        </div>
+      )}
     </>
   );
 };
