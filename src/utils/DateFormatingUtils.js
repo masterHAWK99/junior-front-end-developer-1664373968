@@ -20,5 +20,15 @@ export const getLongFormattedDate = (date) => {
   const hour = parts.find((p) => p.type === "hour").value;
   const minute = parts.find((p) => p.type === "minute").value;
 
-  return `● ${dayName} ${monthName} ● ${hour}:${minute}`;
+  const now = new Date(Date.now());
+
+  const DAYS_IN_MILLISECONDS = 1000 * 3600 * 24;
+
+  const daysDifference = Math.round(
+    (now.getTime() - dateObject.getTime()) / DAYS_IN_MILLISECONDS
+  );
+
+  const daysAgo = daysDifference > 1 ? `${daysDifference} days ago` : "Today";
+
+  return `● ${daysAgo}, ${dayName} ${monthName} ● ${hour}:${minute}`;
 };
