@@ -208,3 +208,7 @@ body {
 .mh-100 {
   min-height: 100vh;
 }
+
+.shadow-xl {
+  box-shadow: 0 8px 16px rgba(84, 84, 84, 0.2);
+}
