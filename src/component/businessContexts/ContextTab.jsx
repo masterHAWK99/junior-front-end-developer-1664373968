@@ -13,11 +13,11 @@ export const ContextTab = ({ onClick, tabContent, active, read }) => {
     >
       <div className="flex align-items-center">
         {!read && (
-          <div className="text-sm uppercase bg-primary rounded-sm p-1 text-light-blue">
+          <div className="text-sm uppercase font-semibold bg-primary rounded-sm px-3 py-1 text-light-blue mr-3">
             New
           </div>
         )}
-        <p className="text-sm text-light ml-3">
+        <p className="text-sm text-light">
           {author} ● {getShortFormattedDate(created_at)}
         </p>
       </div>
