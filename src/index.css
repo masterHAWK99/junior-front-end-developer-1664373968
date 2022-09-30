@@ -253,6 +253,12 @@ body {
   min-height: 100vh;
 }
 
+/**********************/
+/*      Shadows       */
+/**********************/
+.shadow-sm {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
 .shadow-xl {
   box-shadow: 0 8px 16px rgba(84, 84, 84, 0.2);
 }

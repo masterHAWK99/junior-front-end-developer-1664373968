@@ -3,7 +3,7 @@ import { getShortFormattedDate } from "../../utils/DateFormatingUtils";
 export const ContextTab = ({ onClick, tabContent, active, read }) => {
   const { title, content, author, created_at } = tabContent;
 
-  let containerClassNameWhenNew = !read && "bg-white";
+  let containerClassNameWhenNew = !read && "shadow-sm bg-white";
   let containerClassNameWhenActive = active && "shadow-xl bg-white";
   let titleClassNameWhenNew = !read ? "font-bold text-primary" : "text-dark";
 
