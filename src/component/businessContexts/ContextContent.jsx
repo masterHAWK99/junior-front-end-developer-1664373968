@@ -5,10 +5,12 @@ export const ContextContent = ({ tabContent }) => {
 
   return (
     <div className="p-6">
-      <p className="font-semibold text-xl">{title}</p>
+      <p className="font-semibold text-xl text-dark">{title}</p>
       <div className="flex align-items-center">
-        <p className="font-medium">{author}</p>
-        <p className="text-sm ml-1">{getLongFormattedDate(created_at)}</p>
+        <p className="font-medium text-dark">{author}</p>
+        <p className="text-sm ml-1 text-light">
+          {getLongFormattedDate(created_at)}
+        </p>
       </div>
       <p className="text-sm font-medium text-light">{content}</p>
     </div>

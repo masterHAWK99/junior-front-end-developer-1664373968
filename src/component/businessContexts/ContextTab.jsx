@@ -5,7 +5,7 @@ export const ContextTab = ({ onClick, tabContent, active, read }) => {
 
   let containerClassNameWhenNew = !read && "bg-white";
   let containerClassNameWhenActive = active && "shadow-xl bg-white";
-  let titleClassNameWhenNew = !read && "font-bold text-primary";
+  let titleClassNameWhenNew = !read ? "font-bold text-primary" : "text-dark";
 
   return (
     <div
