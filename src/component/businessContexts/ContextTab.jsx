@@ -3,13 +3,12 @@ import { getShortFormattedDate } from "../../utils/DateFormatingUtils";
 export const ContextTab = ({ onClick, tabContent, active, read }) => {
   const { title, content, author, created_at } = tabContent;
 
+  let containerClassNameWhenNew = !read && "bg-white";
+  let containerClassNameWhenActive = active && "shadow-xl bg-white";
+
   return (
     <div
-      className={`${
-        !read && "bg-white"
-      } border border-b-1 border-gray rounded p-3 m-3 ${
-        active && "shadow-xl bg-white"
-      }`}
+      className={`border border-b-1 border-gray rounded p-3 m-3 ${containerClassNameWhenNew} ${containerClassNameWhenActive}`}
     >
       <div className="flex align-items-center">
         {!read && (
