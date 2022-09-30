@@ -29,6 +29,7 @@ export const BusinessContext = () => {
     return task.businessContexts.map((tab) => {
       return (
         <ContextTab
+          key={tab.id}
           onClick={() => {
             setContextId(tab.id);
             handleMarkAsRead(tab.id);
