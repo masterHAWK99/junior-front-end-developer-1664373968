@@ -95,13 +95,13 @@ body {
 }
 
 .text-sm {
-  font-size: 0.65rem;
+  font-size: 0.625rem;
 }
 .text-md {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
 }
-.text-xl {
-  font-size: 1.35rem;
+.text-lg {
+  font-size: 1.3125rem;
 }
 
 .uppercase {

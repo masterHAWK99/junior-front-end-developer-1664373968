@@ -12,7 +12,7 @@ function App() {
     <TaskContext.Provider value={{ currentTask, setCurrentTask }}>
       <div className="mh-100 p-6 row-lg">
         <aside className="bg-white rounded column-lg-4">
-          <p className="text-dark font-bold uppercase p-6 border border-b-1 border-gray">
+          <p className="text-dark font-bold text-md uppercase p-6 border border-b-1 border-gray">
             Your tasks
           </p>
           <TaskList />
