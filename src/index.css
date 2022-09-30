@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/**********************/
+/*       Resets       */
+/**********************/
 *,
 *::before,
 *::after {
@@ -133,6 +137,10 @@ body {
   margin-bottom: 0.25rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .m-3 {
   margin: 0.75rem;
 }
@@ -199,6 +207,9 @@ body {
 /**********************/
 /*      Borders       */
 /**********************/
+.rounded-full {
+  border-radius: 99rem;
+}
 .rounded-sm {
   border-radius: 0.25rem;
 }
@@ -244,4 +255,9 @@ body {
 
 .shadow-xl {
   box-shadow: 0 8px 16px rgba(84, 84, 84, 0.2);
+}
+
+.avatar {
+  border-color: #c3c4c6;
+  padding: 0.1rem;
 }
