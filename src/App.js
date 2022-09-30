@@ -10,21 +10,21 @@ function App() {
 
   return (
     <TaskContext.Provider value={{ currentTask, setCurrentTask }}>
-      <div className="flex mh-100 p-6">
-        <aside className="bg-white rounded w-25">
+      <div className="mh-100 p-6 row-lg">
+        <aside className="bg-white rounded column-lg-4">
           <p className="font-bold uppercase p-6 border border-b-1 border-gray">
             Your tasks
           </p>
           <TaskList />
         </aside>
-        <main className="bg-white rounded w-75 ml-3 flex flex-col">
+        <main className="bg-white rounded column-lg-8 flex flex-col">
           <div className="border border-b-1 border-gray">
             <button className="font-bold uppercase py-6 mx-12 text-primary border border-b-2 border-primary flex align-items-center bg-white">
               <CompassIcon />
               <span className="ml-3">Business context</span>
             </button>
           </div>
-          <div className="flex ml-1 mb-1 h-100">
+          <div className="row-sm ml-1 mr-1 mb-1 h-100">
             <BusinessContext />
           </div>
         </main>

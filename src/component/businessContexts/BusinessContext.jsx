@@ -42,9 +42,9 @@ export const BusinessContext = () => {
   };
   return (
     <>
-      <div className="bg-gray w-25">{mapTabs()}</div>
+      <div className="bg-gray column-sm-4">{mapTabs()}</div>
       {businessContext && (
-        <div className="w-75">
+        <div className="column-sm-8">
           <ContextContent tabContent={businessContext} />
         </div>
       )}

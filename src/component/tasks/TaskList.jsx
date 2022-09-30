@@ -34,5 +34,5 @@ export const TaskList = () => {
     });
   };
 
-  return <>{mapTasks()}</>;
+  return <div className="m-6">{mapTasks()}</div>;
 };
