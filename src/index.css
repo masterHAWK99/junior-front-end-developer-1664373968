@@ -137,6 +137,9 @@ body {
   margin-bottom: 0.25rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
 .ml-2 {
   margin-left: 0.5rem;
 }

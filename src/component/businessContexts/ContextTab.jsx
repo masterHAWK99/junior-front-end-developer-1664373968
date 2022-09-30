@@ -21,10 +21,10 @@ export const ContextTab = ({ onClick, tabContent, active, read }) => {
           {author} ● {getShortFormattedDate(created_at)}
         </p>
       </div>
-      <p className={`text-md ${titleClassNameWhenNew}`} onClick={onClick}>
+      <p className={`text-md mt-2 ${titleClassNameWhenNew}`} onClick={onClick}>
         {title}
       </p>
-      <p className="text-sm text-light">{content}</p>
+      <p className="text-sm text-light mt-2">{content}</p>
     </div>
   );
 };
