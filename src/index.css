@@ -266,6 +266,12 @@ body {
   box-shadow: 0 8px 16px rgba(84, 84, 84, 0.2);
 }
 
+.btn {
+  border: none;
+  padding: 0;
+  background: none;
+}
+
 .avatar {
   border-color: #c3c4c6;
   padding: 0.1rem;

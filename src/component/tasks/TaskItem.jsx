@@ -1,8 +1,10 @@
 export const TaskItem = ({ onClick, title, icon }) => {
   return (
-    <div className="mt-6 flex" onClick={onClick}>
+    <div className="mt-6 flex">
       <img src={icon} alt="" />
-      <p className="ml-3 text-dark text-md">{title}</p>
+      <button className="btn ml-3 text-dark text-md" onClick={onClick}>
+        {title}
+      </button>
     </div>
   );
 };
