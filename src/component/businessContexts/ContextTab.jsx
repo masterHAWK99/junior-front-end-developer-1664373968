@@ -11,7 +11,7 @@ export const ContextTab = ({ onClick, tabContent, active, read }) => {
 
   return (
     <div
-      className={`border border-b-1 border-gray rounded p-3 m-3 ${containerClassNameWhenNew} ${containerClassNameWhenActive}`}
+      className={`border border-b-1 border-gray rounded px-5 py-3h m-2 ${containerClassNameWhenNew} ${containerClassNameWhenActive}`}
     >
       <div className="flex align-items-center">
         {!read && (

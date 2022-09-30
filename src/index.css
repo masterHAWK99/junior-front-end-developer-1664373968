@@ -137,6 +137,9 @@ body {
   margin-bottom: 0.25rem;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -155,6 +158,10 @@ body {
 }
 .mr-3 {
   margin-right: 0.75rem;
+}
+
+.ml-3h {
+  margin-left: 0.875rem;
 }
 
 .m-6 {
@@ -195,6 +202,16 @@ body {
   padding-right: 0.75rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-3h {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -205,6 +222,10 @@ body {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 /**********************/
