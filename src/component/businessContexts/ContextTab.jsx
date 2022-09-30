@@ -5,6 +5,7 @@ export const ContextTab = ({ onClick, tabContent, active, read }) => {
 
   let containerClassNameWhenNew = !read && "bg-white";
   let containerClassNameWhenActive = active && "shadow-xl bg-white";
+  let titleClassNameWhenNew = !read && "font-bold text-primary";
 
   return (
     <div
@@ -20,7 +21,7 @@ export const ContextTab = ({ onClick, tabContent, active, read }) => {
           {author} ● {getShortFormattedDate(created_at)}
         </p>
       </div>
-      <p className="font-medium text-md" onClick={onClick}>
+      <p className={`text-md ${titleClassNameWhenNew}`} onClick={onClick}>
         {title}
       </p>
       <p className="text-sm text-light">{content}</p>
