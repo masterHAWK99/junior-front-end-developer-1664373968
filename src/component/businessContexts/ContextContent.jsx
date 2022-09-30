@@ -8,11 +8,13 @@ export const ContextContent = ({ tabContent }) => {
     <div className="p-6">
       <p className="font-semibold text-lg text-dark">{title}</p>
       <div className="flex">
-        <img
-          className="rounded-full border border-1 avatar"
-          src={profile}
-          alt="profile"
-        />
+        <div>
+          <img
+            className="rounded-full border border-1 avatar"
+            src={profile}
+            alt="profile"
+          />
+        </div>
         <div className="ml-2">
           <div className="flex align-items-center">
             <p className="font-medium text-dark">{author}</p>
