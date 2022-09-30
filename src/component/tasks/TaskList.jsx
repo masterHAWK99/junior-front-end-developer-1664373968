@@ -29,6 +29,7 @@ export const TaskList = () => {
           onClick={() => setCurrentTask(task.id)}
           title={task.title}
           icon={getIconByStatus(task.status)}
+          active={task.status === "active"}
         />
       );
     });
