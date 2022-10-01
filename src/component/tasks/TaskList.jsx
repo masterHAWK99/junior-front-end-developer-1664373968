@@ -29,10 +29,11 @@ export const TaskList = () => {
           onClick={() => setCurrentTask(task.id)}
           title={task.title}
           icon={getIconByStatus(task.status)}
+          active={task.status === "active"}
         />
       );
     });
   };
 
-  return <>{mapTasks()}</>;
+  return <div className="m-6">{mapTasks()}</div>;
 };

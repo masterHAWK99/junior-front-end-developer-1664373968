@@ -1,8 +1,13 @@
-export const TaskItem = ({ onClick, title, icon }) => {
+export const TaskItem = ({ onClick, title, icon, active }) => {
   return (
-    <div className="mt-6 ml-6 flex" onClick={onClick}>
+    <div className="mt-6 flex">
       <img src={icon} alt="" />
-      <p className="ml-3">{title}</p>
+      <button
+        className={`btn ml-3 text-dark text-md ${active && "font-semibold"}`}
+        onClick={onClick}
+      >
+        {title}
+      </button>
     </div>
   );
 };
