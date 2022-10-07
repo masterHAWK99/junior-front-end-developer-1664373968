@@ -295,8 +295,9 @@ body {
 /**********************/
 .btn {
   border: none;
-  padding: 0;
-  background: none;
+}
+.btn:not(:disabled) {
+  cursor: pointer;
 }
 .btn-light {
   background-color: #ffffff;
