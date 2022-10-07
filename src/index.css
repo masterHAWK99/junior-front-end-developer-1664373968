@@ -298,7 +298,12 @@ body {
   padding: 0;
   background: none;
 }
-
+.btn-light {
+  background-color: #ffffff;
+}
+.btn-empty {
+  background-color: transparent;
+}
 .avatar {
   border-color: #c3c4c6;
   padding: 0.1rem;
