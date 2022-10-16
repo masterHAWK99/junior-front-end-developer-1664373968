@@ -7,6 +7,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body,
@@ -24,7 +25,6 @@ dd {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   background-color: #f4f5f7;
   height: 100%;
 }
@@ -41,10 +41,10 @@ body {
 
 @media screen and (min-width: 764px) {
   .column-sm-4 {
-    width: 25%;
+    width: 30%;
   }
   .column-sm-8 {
-    width: 75%;
+    width: 70%;
   }
   .row-sm {
     flex-direction: row;
@@ -98,7 +98,7 @@ body {
   font-weight: 600;
 }
 .font-bold {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .text-sm {
@@ -114,11 +114,18 @@ body {
 .uppercase {
   text-transform: uppercase;
 }
+.text-left {
+  text-align: left;
+}
+
 .text-primary {
   color: #0165ff;
 }
 .text-light {
   color: #6b778c;
+}
+.text-gray-light {
+  color: #aeb5c1;
 }
 .text-light-blue {
   color: #eaf2fe;
@@ -295,16 +302,36 @@ body {
 /**********************/
 .btn {
   border: none;
-  padding: 0;
-  background: none;
+}
+.btn:not(:disabled) {
+  cursor: pointer;
+}
+.btn-light {
+  background-color: #ffffff;
+}
+.btn-empty {
+  background-color: transparent;
 }
 
-
-
-
-
-
+/**********************/
+/*      Others        */
+/**********************/
 .avatar {
   border-color: #c3c4c6;
   padding: 0.1rem;
+}
+
+.module {
+  width: 250px;
+  margin: 0 0 1em 0;
+  overflow: hidden;
+}
+.module p {
+  margin: 0;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
