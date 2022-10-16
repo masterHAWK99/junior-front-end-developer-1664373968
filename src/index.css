@@ -41,10 +41,10 @@ body {
 
 @media screen and (min-width: 764px) {
   .column-sm-4 {
-    width: 25%;
+    width: 30%;
   }
   .column-sm-8 {
-    width: 75%;
+    width: 70%;
   }
   .row-sm {
     flex-direction: row;
