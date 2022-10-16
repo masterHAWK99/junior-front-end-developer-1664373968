@@ -21,12 +21,12 @@ export const ContextTab = ({ onClick, tabContent, active, read }) => {
             New
           </div>
         )}
-        <p className="text-sm text-light">
+        <p className="text-sm text-light font-medium">
           {author} ● {getShortFormattedDate(created_at)}
         </p>
       </div>
       <p className={`text-md mt-2 ${titleClassNameWhenNew}`}>{title}</p>
-      <p className="text-left text-sm text-light mt-2 module line-clamp">
+      <p className="text-left text-sm text-light mt-2 module line-clamp font-medium">
         {content}
       </p>
     </button>
