@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/junior-front-end-developer-1664373968/static/css/main.11bc8133.css",
-    "main.js": "/junior-front-end-developer-1664373968/static/js/main.b5c9db38.js",
+    "main.css": "/junior-front-end-developer-1664373968/static/css/main.041429cb.css",
+    "main.js": "/junior-front-end-developer-1664373968/static/js/main.98eae235.js",
     "static/js/787.a48bc194.chunk.js": "/junior-front-end-developer-1664373968/static/js/787.a48bc194.chunk.js",
     "static/media/blocked.svg": "/junior-front-end-developer-1664373968/static/media/blocked.75255430aec84d9564a1acca07ebfa3f.svg",
     "static/media/compass.svg": "/junior-front-end-developer-1664373968/static/media/compass.ff9707620d685565532285286391d9c3.svg",
     "static/media/active.svg": "/junior-front-end-developer-1664373968/static/media/active.3f93d6978ce7558d7d41fd58a94814da.svg",
     "index.html": "/junior-front-end-developer-1664373968/index.html",
     "static/media/completed.svg": "/junior-front-end-developer-1664373968/static/media/completed.a76baaeee30d4f9a4cb28c992b7de1b7.svg",
-    "main.11bc8133.css.map": "/junior-front-end-developer-1664373968/static/css/main.11bc8133.css.map",
-    "main.b5c9db38.js.map": "/junior-front-end-developer-1664373968/static/js/main.b5c9db38.js.map",
+    "main.041429cb.css.map": "/junior-front-end-developer-1664373968/static/css/main.041429cb.css.map",
+    "main.98eae235.js.map": "/junior-front-end-developer-1664373968/static/js/main.98eae235.js.map",
     "787.a48bc194.chunk.js.map": "/junior-front-end-developer-1664373968/static/js/787.a48bc194.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11bc8133.css",
-    "static/js/main.b5c9db38.js"
+    "static/css/main.041429cb.css",
+    "static/js/main.98eae235.js"
   ]
 }
