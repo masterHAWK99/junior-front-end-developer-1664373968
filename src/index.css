@@ -305,7 +305,26 @@ body {
 .btn-empty {
   background-color: transparent;
 }
+
+/**********************/
+/*      Others        */
+/**********************/
 .avatar {
   border-color: #c3c4c6;
   padding: 0.1rem;
+}
+
+.module {
+  width: 250px;
+  margin: 0 0 1em 0;
+  overflow: hidden;
+}
+.module p {
+  margin: 0;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }

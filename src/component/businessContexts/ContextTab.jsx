@@ -26,7 +26,9 @@ export const ContextTab = ({ onClick, tabContent, active, read }) => {
         </p>
       </div>
       <p className={`text-md mt-2 ${titleClassNameWhenNew}`}>{title}</p>
-      <p className="text-sm text-light mt-2">{content}</p>
+      <p className="text-left text-sm text-light mt-2 module line-clamp">
+        {content}
+      </p>
     </button>
   );
 };
